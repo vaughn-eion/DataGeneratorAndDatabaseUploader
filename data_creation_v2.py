@@ -3,7 +3,7 @@ from random import randint
 
 # Creates new file with header row and random name based on time.
 def create_file():
-    file_name = str("generated_sales_data_" + str(datetime.now().strftime("%H%M%S")) + ".txt")
+    file_name = str("generated_sales_data_" + str(datetime.now().strftime("%H%M%S")) + ".csv")
     open(file_name, "x")
     f = open(file_name, "a")
     f.write("OrderId,FirstName,LastName,Date,Product,Count")
